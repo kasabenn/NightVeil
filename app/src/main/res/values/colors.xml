@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- NIGHTVEIL - Gothic Color Palette -->
+
+    <color name="night_black">#0B0B0F</color>
+    <color name="dark_charcoal">#15151B</color>
+    <color name="card_dark">#1E1E26</color>
+
+    <color name="burgundy">#7A1F3D</color>
+    <color name="deep_burgundy">#4A1025</color>
+
+    <color name="text_primary">#F5F0F2</color>
+    <color name="text_secondary">#B8B1B5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="divider_dark">#2B2B33</color>
+
+</resources>

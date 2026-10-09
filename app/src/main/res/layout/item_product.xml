@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="16dp"
+
+    app:cardBackgroundColor="@color/night_black"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- ============================================== -->
+        <!-- PRODUCT CONTENT -->
+        <!-- ============================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ================= PRODUCT IMAGE ================= -->
+
+            <ImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/night_black"
+                android:contentDescription="Product image"
+                android:scaleType="centerCrop" />
+
+
+            <!-- ================= PRODUCT INFO ================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!-- NAME -->
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Raven Choker"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <!-- PRICE -->
+
+                <TextView
+                    android:id="@+id/tvProductPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Rp89.000"
+                    android:textColor="@color/burgundy"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <!-- RATING + SOLD -->
+
+                <TextView
+                    android:id="@+id/tvProductRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="★ 4.8 • 128 sold"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ============================================== -->
+        <!-- FAVORITE BUTTON -->
+        <!-- ============================================== -->
+
+        <TextView
+            android:id="@+id/tvFavorite"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="7dp"
+            android:background="@drawable/bg_category"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="♡"
+            android:textColor="@color/text_primary"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+        <!-- ============================================== -->
+        <!-- OLD ADAPTER COMPATIBILITY -->
+        <!-- ============================================== -->
+
+        <TextView
+            android:id="@+id/tvProductSymbol"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:text="" />
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

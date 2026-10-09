@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- NIGHTVEIL Gothic Theme -->
+    <style name="Base.Theme.NightVeil" parent="Theme.Material3.Dark.NoActionBar">
+
+        <!-- Background -->
+        <item name="android:windowBackground">@color/night_black</item>
+        <item name="colorSurface">@color/dark_charcoal</item>
+        <item name="colorSurfaceContainer">@color/card_dark</item>
+
+        <!-- Gothic Burgundy -->
+        <item name="colorPrimary">@color/burgundy</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Text -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/night_black</item>
+        <item name="android:navigationBarColor">@color/night_black</item>
+
+        <!-- System UI -->
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+    <style name="Theme.NightVeil" parent="Base.Theme.NightVeil" />
+
+</resources>
